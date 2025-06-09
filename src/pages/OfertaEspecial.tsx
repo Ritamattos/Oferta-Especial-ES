@@ -78,8 +78,12 @@ const OfertaEspecial = () => {
           <Card className="overflow-hidden shadow-xl border-primary/20 hover-scale">
             <CardContent className="p-0">
               <div className="bg-gradient-to-br from-primary to-offer p-8 text-white text-center">
-                <div className="w-32 h-32 mx-auto bg-white/20 rounded-full flex items-center justify-center mb-4">
-                  <span className="text-4xl">🃏</span>
+                <div className="w-32 h-32 mx-auto bg-white/20 rounded-full flex items-center justify-center mb-4 overflow-hidden">
+                  <img 
+                    src="/lovable-uploads/ce165df9-8f22-43ee-b815-9aa5463334de.png" 
+                    alt="Baralho da Ousadia" 
+                    className="w-20 h-20 object-contain"
+                  />
                 </div>
                 <h3 className="text-2xl font-bold mb-2">Baralho da Ousadia</h3>
                 <div className="flex items-center justify-center gap-2 mb-4">
@@ -92,10 +96,10 @@ const OfertaEspecial = () => {
               <div className="p-6 bg-card">
                 <div className="text-center mb-4">
                   <div className="text-lg text-muted-foreground line-through">
-                    De: R$ 97,00
+                    De: R$ 27,90
                   </div>
                   <div className="text-3xl font-bold text-urgent mb-2">
-                    Por apenas: R$ 47,00
+                    Por apenas: R$ 13,95
                   </div>
                   <div className="inline-block bg-urgent text-white px-3 py-1 rounded-full text-sm font-semibold">
                     50% OFF
@@ -141,7 +145,7 @@ const OfertaEspecial = () => {
         <div className="text-center space-y-6">
           <Button 
             size="lg" 
-            className="bg-gradient-to-r from-urgent to-primary hover:from-urgent/90 hover:to-primary/90 text-white font-bold py-6 px-12 text-xl rounded-full shadow-2xl transform transition-all duration-300 hover:scale-105 animate-pulse"
+            className="bg-gradient-to-r from-urgent to-primary hover:from-urgent/90 hover:to-primary/90 text-white font-bold py-6 px-12 text-xl rounded-full shadow-2xl transform transition-all duration-300 hover:scale-105"
           >
             🔥 QUERO APROVEITAR ESTA OFERTA! 🔥
           </Button>

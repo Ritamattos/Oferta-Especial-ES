@@ -80,7 +80,7 @@ const OfertaEspecial = () => {
               <div className="bg-gradient-to-br from-primary to-offer p-8 text-white text-center">
                 <div className="w-32 h-32 mx-auto bg-white/20 rounded-full flex items-center justify-center mb-4 overflow-hidden">
                   <img 
-                    src="/lovable-uploads/ce165df9-8f22-43ee-b815-9aa5463334de.png" 
+                    src="/lovable-uploads/c1981618-413d-482c-b258-ea0ae81af197.png" 
                     alt="Baralho da Ousadia" 
                     className="w-20 h-20 object-contain"
                   />
@@ -145,7 +145,7 @@ const OfertaEspecial = () => {
         <div className="text-center space-y-6">
           <Button 
             size="lg" 
-            className="bg-gradient-to-r from-urgent to-primary hover:from-urgent/90 hover:to-primary/90 text-white font-bold py-6 px-12 text-xl rounded-full shadow-2xl transform transition-all duration-300 hover:scale-105"
+            className="bg-gradient-to-r from-urgent to-primary hover:from-urgent/90 hover:to-primary/90 text-white font-bold py-4 px-6 md:py-6 md:px-12 text-lg md:text-xl rounded-full shadow-2xl transform transition-all duration-300 hover:scale-105 w-full max-w-md mx-auto"
           >
             🔥 QUERO APROVEITAR ESTA OFERTA! 🔥
           </Button>

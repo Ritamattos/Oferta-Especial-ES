@@ -148,7 +148,7 @@ const OfertaEspecial = () => {
             className="bg-gradient-to-r from-urgent to-primary hover:from-urgent/90 hover:to-primary/90 text-white font-bold py-4 px-4 md:py-6 md:px-12 text-base md:text-xl rounded-full shadow-2xl transform transition-all duration-300 hover:scale-105 w-full max-w-md mx-auto"
             onClick={() => window.open('https://pay.hotmart.com/Q96619917J?off=wulb1gbt&checkoutMode=10', '_blank')}
           >
-            🔥 QUERO APROVEITAR ESTA OFERTA!
+            QUERO APROVEITAR ESTA OFERTA!
           </Button>
           
           <div className="space-y-2">

@@ -32,6 +32,14 @@ export default {
 					DEFAULT: 'hsl(var(--secondary))',
 					foreground: 'hsl(var(--secondary-foreground))'
 				},
+				offer: {
+					DEFAULT: 'hsl(var(--offer))',
+					foreground: 'hsl(var(--offer-foreground))'
+				},
+				urgent: {
+					DEFAULT: 'hsl(var(--urgent))',
+					foreground: 'hsl(var(--urgent-foreground))'
+				},
 				destructive: {
 					DEFAULT: 'hsl(var(--destructive))',
 					foreground: 'hsl(var(--destructive-foreground))'

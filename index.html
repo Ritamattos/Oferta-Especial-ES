@@ -20,5 +20,43 @@
   <body>
     <div id="root"></div>
     <script type="module" src="/src/main.tsx"></script>
+    <!DOCTYPE html>
+<html>
+<head>
+    <!-- seu CSS e outros links aqui -->
+</head>
+<body>
+    <!-- todo o conteúdo da sua página aqui -->
+    
+    <!-- ADICIONE O SCRIPT AQUI, ANTES DO </body> -->
+    <script>
+    // Função para mudar cores automaticamente
+    function changeTextColors() {
+      // Pega todos os elementos da página
+      const allElements = document.querySelectorAll('*');
+      
+      allElements.forEach(element => {
+        const text = element.textContent || element.innerText;
+        
+        // Se contém "Por apenas", muda para branco
+        if (text.includes('Por apenas')) {
+          element.classList.add('auto-white-text');
+        }
+        
+        // Se contém "Garantia", muda para preto
+        if (text.includes('Garantia')) {
+          element.classList.add('auto-black-text');
+        }
+      });
+    }
+
+    // Executa quando a página carrega
+    document.addEventListener('DOMContentLoaded', changeTextColors);
+
+    // Executa também depois de um pequeno delay para garantir
+    setTimeout(changeTextColors, 100);
+    </script>
+</body>
+</html>
   </body>
 </html>

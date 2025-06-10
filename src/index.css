@@ -84,6 +84,11 @@
   color: #ffffff !important;
 }
 
+/* Para mudar "Por apenas: R$ 13,95" para cor branca */
+.price-current, .current-price {
+  color: #ffffff !important;
+}
+
 /* Para mudar o título "Garantia de 7 Dias" para cor preta */
 .guarantee-title {
   color: #000000 !important;

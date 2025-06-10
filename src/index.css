@@ -74,10 +74,9 @@
   }
 }
 
-/* Classe específica para destacar apenas o preço */
-.price-highlight {
-  color: hsl(0 84% 60%);
-  font-weight: bold;
+/* Ajuste de cores de texto */
+.text-gray-500, .text-gray-400, .text-gray-600, .text-muted-foreground, .text-muted {
+  color: #000000 !important;
 }
 
 @layer base {

@@ -73,9 +73,19 @@
     --sidebar-ring: 0 84% 50%;
   }
 }
-
 /* Ajuste de cores de texto */
 .text-gray-500, .text-gray-400, .text-gray-600, .text-muted-foreground, .text-muted {
+  color: #000000 !important;
+}
+
+/* Mudanças específicas solicitadas */
+/* Para mudar "De R$ 27,90" para cor branca */
+.price-original, .line-through {
+  color: #ffffff !important;
+}
+
+/* Para mudar o título "Garantia de 7 Dias" para cor preta */
+.guarantee-title {
   color: #000000 !important;
 }
 

@@ -103,6 +103,37 @@
   color: #000000 !important;
 }
 
+/* Seletores mais específicos para forçar as mudanças */
+/* Qualquer elemento que contenha texto sobre preço */
+[class*="price"] {
+  color: #ffffff !important;
+}
+
+/* Força cor branca para elementos com texto de preço */
+*:has-text("Por apenas") {
+  color: #ffffff !important;
+}
+
+/* Força cor preta para elementos com texto de garantia */
+*:has-text("Garantia") {
+  color: #000000 !important;
+}
+
+/* Seletores mais agressivos */
+div:contains("Por apenas"),
+span:contains("Por apenas"),
+p:contains("Por apenas") {
+  color: #ffffff !important;
+}
+
+div:contains("Garantia"),
+span:contains("Garantia"),
+h1:contains("Garantia"),
+h2:contains("Garantia"),
+h3:contains("Garantia") {
+  color: #000000 !important;
+}
+
 @layer base {
   * {
     @apply border-border;

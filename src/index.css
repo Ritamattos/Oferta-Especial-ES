@@ -89,18 +89,17 @@
   color: #ffffff !important;
 }
 
-/* Seletor universal para pegar qualquer elemento que contenha "Por apenas" */
-*:contains("Por apenas") {
-  color: #ffffff !important;
-}
-
 /* Para mudar o título "Garantia de 7 Dias" para cor preta */
 .guarantee-title {
   color: #000000 !important;
 }
 
-/* Seletor universal para pegar qualquer elemento que contenha "Garantia" */
-*:contains("Garantia") {
+/* Classes aplicadas automaticamente pelo JavaScript */
+.auto-white-text {
+  color: #ffffff !important;
+}
+
+.auto-black-text {
   color: #000000 !important;
 }
 

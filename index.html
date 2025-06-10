@@ -20,42 +20,45 @@
   <body>
     <div id="root"></div>
     <script type="module" src="/src/main.tsx"></script>
-    <!DOCTYPE html>
-<html>
-<head>
-    <!-- seu CSS e outros links aqui -->
-</head>
-<body>
-    <!-- todo o conteúdo da sua página aqui -->
-    
-    <!-- ADICIONE O SCRIPT AQUI, ANTES DO </body> -->
     <script>
-    // Função para mudar cores automaticamente
-    function changeTextColors() {
-      // Pega todos os elementos da página
-      const allElements = document.querySelectorAll('*');
+// Função para mudar cores - versão melhorada para React
+function changeTextColors() {
+  // Espera um pouco mais para o React renderizar
+  setTimeout(() => {
+    const allElements = document.getElementsByTagName('*');
+    
+    for (let element of allElements) {
+      const text = element.textContent || element.innerText || '';
       
-      allElements.forEach(element => {
-        const text = element.textContent || element.innerText;
-        
-        // Se contém "Por apenas", muda para branco
-        if (text.includes('Por apenas')) {
-          element.classList.add('auto-white-text');
-        }
-        
-        // Se contém "Garantia", muda para preto
-        if (text.includes('Garantia')) {
-          element.classList.add('auto-black-text');
-        }
-      });
+      // Para "Por apenas" - força cor branca
+      if (text.includes('Por apenas') && !element.querySelector('*')) {
+        element.style.color = '#ffffff';
+        element.style.setProperty('color', '#ffffff', 'important');
+      }
+      
+      // Para "Garantia" - força cor preta  
+      if (text.includes('Garantia') && !element.querySelector('*')) {
+        element.style.color = '#000000';
+        element.style.setProperty('color', '#000000', 'important');
+      }
     }
+  }, 500);
+}
 
-    // Executa quando a página carrega
-    document.addEventListener('DOMContentLoaded', changeTextColors);
+// Executa várias vezes para garantir
+document.addEventListener('DOMContentLoaded', changeTextColors);
+setTimeout(changeTextColors, 1000);
+setTimeout(changeTextColors, 2000);
 
-    // Executa também depois de um pequeno delay para garantir
-    setTimeout(changeTextColors, 100);
-    </script>
+// Observa mudanças no DOM (para quando o React atualizar)
+if (window.MutationObserver) {
+  const observer = new MutationObserver(changeTextColors);
+  observer.observe(document.body, {
+    childList: true,
+    subtree: true
+  });
+}
+</script>
 </body>
 </html>
   </body>

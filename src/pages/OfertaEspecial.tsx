@@ -98,7 +98,7 @@ const OfertaEspecial = () => {
                   <div className="text-lg text-muted-foreground line-through">
                     De: $7,40
                   </div>
-                  <div className="text-3xl font-bold text-black mb-2">
+                  <div className="text-3xl font-bold text-white mb-2">
                     Por solo: $3,70
                   </div>
                   <div className="inline-block bg-urgent text-white px-3 py-1 rounded-full text-sm font-semibold">

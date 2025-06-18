@@ -80,7 +80,7 @@ const OfertaEspecial = () => {
               <div className="bg-gradient-to-br from-primary to-offer p-8 text-white text-center">
                 <div className="w-32 h-32 mx-auto bg-white/20 rounded-full flex items-center justify-center mb-4 overflow-hidden">
                   <img 
-                    src="/lovable-uploads/c1981618-413d-482c-b258-ea0ae81af197.png" 
+                    src="/lovable-uploads/8b39edb2-f0dc-4ce7-b362-38dfbaf16bfe.png" 
                     alt="Baraja de Audacia" 
                     className="w-20 h-20 object-contain"
                   />
@@ -98,7 +98,7 @@ const OfertaEspecial = () => {
                   <div className="text-lg text-muted-foreground line-through">
                     De: $7,40
                   </div>
-                  <div className="text-3xl font-bold text-urgent mb-2">
+                  <div className="text-3xl font-bold text-black mb-2">
                     Por solo: $3,70
                   </div>
                   <div className="inline-block bg-urgent text-white px-3 py-1 rounded-full text-sm font-semibold">
@@ -130,7 +130,7 @@ const OfertaEspecial = () => {
                 <div className="flex items-center gap-3">
                   <Shield className="w-8 h-8 text-primary" />
                   <div>
-                    <h4 className="font-bold text-secondary-foreground">Garantía de 7 Días</h4>
+                    <h4 className="font-bold text-black">Garantía de 7 Días</h4>
                     <p className="text-sm text-muted-foreground">
                       100% de tu dinero de vuelta si no quedas satisfecho
                     </p>

@@ -27,20 +27,20 @@ const OfertaEspecial = () => {
   };
 
   const benefits = [
-    "240+ Cartas com Desafios Sensuais",
-    "Guia Completo de Relacionamento",
-    "Acesso Imediato ao Download",
-    "Compatível com Todos os Dispositivos",
-    "Atualizações Gratuitas por 1 Ano"
+    "240+ Cartas con Desafíos Sensuales",
+    "Guía Completa de Relaciones",
+    "Acceso Inmediato a la Descarga",
+    "Compatible con Todos los Dispositivos",
+    "Actualizaciones Gratuitas por 1 Año"
   ];
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-primary/20 via-background to-offer/10">
-      {/* Header com Oferta Especial */}
+      {/* Header con Oferta Especial */}
       <div className="bg-gradient-to-r from-urgent to-primary text-white py-3">
         <div className="container mx-auto px-4 text-center">
           <p className="text-sm font-semibold animate-pulse">
-            ⚡ OFERTA RELÂMPAGO - VÁLIDA APENAS PELOS PRÓXIMOS MINUTOS! ⚡
+            ⚡ OFERTA RELÁMPAGO - ¡VÁLIDA SOLO POR LOS PRÓXIMOS MINUTOS! ⚡
           </p>
         </div>
       </div>
@@ -49,31 +49,31 @@ const OfertaEspecial = () => {
         {/* Título Principal */}
         <div className="text-center mb-8 animate-fade-in">
           <h1 className="text-4xl md:text-6xl font-bold bg-gradient-to-r from-primary to-offer bg-clip-text text-transparent mb-4">
-            🛑 ESPERA!
+            🛑 ¡ESPERA!
           </h1>
           <h2 className="text-2xl md:text-3xl font-bold text-foreground mb-4">
-            Oferta Exclusiva Para Você!
+            ¡Oferta Exclusiva Para Ti!
           </h2>
           <p className="text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto">
-            Antes de sair, que tal levar o <span className="font-bold text-primary">Baralho da Ousadia</span> com <span className="font-bold text-urgent">50% de DESCONTO?</span>
+            Antes de irte, ¿qué tal llevarte la <span className="font-bold text-primary">Baraja de Audacia</span> con <span className="font-bold text-urgent">50% de DESCUENTO?</span>
           </p>
         </div>
 
-        {/* Timer de Urgência */}
+        {/* Timer de Urgencia */}
         <Card className="bg-gradient-to-r from-urgent to-primary text-white mb-8 border-0 shadow-2xl animate-scale-in">
           <CardContent className="p-6 text-center">
             <div className="flex items-center justify-center gap-2 mb-2">
               <Clock className="w-6 h-6" />
-              <span className="text-lg font-semibold">Esta oferta expira em:</span>
+              <span className="text-lg font-semibold">Esta oferta expira en:</span>
             </div>
             <div className="text-4xl md:text-6xl font-bold tracking-wider">
               {formatTime(timeLeft)}
             </div>
-            <p className="text-sm opacity-90 mt-2">Não perca esta oportunidade única!</p>
+            <p className="text-sm opacity-90 mt-2">¡No pierdas esta oportunidad única!</p>
           </CardContent>
         </Card>
 
-        {/* Seção do Produto com Desconto */}
+        {/* Sección del Producto con Descuento */}
         <div className="grid md:grid-cols-2 gap-8 mb-8">
           <Card className="overflow-hidden shadow-xl border-primary/20 hover-scale">
             <CardContent className="p-0">
@@ -81,11 +81,11 @@ const OfertaEspecial = () => {
                 <div className="w-32 h-32 mx-auto bg-white/20 rounded-full flex items-center justify-center mb-4 overflow-hidden">
                   <img 
                     src="/lovable-uploads/c1981618-413d-482c-b258-ea0ae81af197.png" 
-                    alt="Baralho da Ousadia" 
+                    alt="Baraja de Audacia" 
                     className="w-20 h-20 object-contain"
                   />
                 </div>
-                <h3 className="text-2xl font-bold mb-2">Baralho da Ousadia</h3>
+                <h3 className="text-2xl font-bold mb-2">Baraja de Audacia</h3>
                 <div className="flex items-center justify-center gap-2 mb-4">
                   {[...Array(5)].map((_, i) => (
                     <Star key={i} className="w-5 h-5 fill-current" />
@@ -96,10 +96,10 @@ const OfertaEspecial = () => {
               <div className="p-6 bg-card">
                 <div className="text-center mb-4">
                   <div className="text-lg text-muted-foreground line-through">
-                    De: R$ 27,90
+                    De: $7,40
                   </div>
                   <div className="text-3xl font-bold text-urgent mb-2">
-                    Por apenas: R$ 13,95
+                    Por solo: $3,70
                   </div>
                   <div className="inline-block bg-urgent text-white px-3 py-1 rounded-full text-sm font-semibold">
                     50% OFF
@@ -111,7 +111,7 @@ const OfertaEspecial = () => {
 
           <div className="space-y-6">
             <h3 className="text-2xl font-bold text-center md:text-left">
-              O que você vai receber:
+              Qué vas a recibir:
             </h3>
             <div className="space-y-3">
               {benefits.map((benefit, index) => (
@@ -124,15 +124,15 @@ const OfertaEspecial = () => {
               ))}
             </div>
 
-            {/* Garantia */}
+            {/* Garantía */}
             <Card className="bg-secondary/50 border-secondary">
               <CardContent className="p-4">
                 <div className="flex items-center gap-3">
                   <Shield className="w-8 h-8 text-primary" />
                   <div>
-                    <h4 className="font-bold text-secondary-foreground">Garantia de 7 Dias</h4>
+                    <h4 className="font-bold text-secondary-foreground">Garantía de 7 Días</h4>
                     <p className="text-sm text-muted-foreground">
-                      100% do seu dinheiro de volta se não ficar satisfeito
+                      100% de tu dinero de vuelta si no quedas satisfecho
                     </p>
                   </div>
                 </div>
@@ -146,27 +146,27 @@ const OfertaEspecial = () => {
           <Button 
             size="lg" 
             className="bg-gradient-to-r from-urgent to-primary hover:from-urgent/90 hover:to-primary/90 text-white font-bold py-4 px-4 md:py-6 md:px-12 text-base md:text-xl rounded-full shadow-2xl transform transition-all duration-300 hover:scale-105 w-full max-w-md mx-auto"
-            onClick={() => window.open('https://pay.hotmart.com/Q96619917J?off=wulb1gbt&checkoutMode=10', '_blank')}
+            onClick={() => window.open('https://pay.hotmart.com/T96936639R?off=j4tv24yp&checkoutMode=10', '_blank')}
           >
-            QUERO APROVEITAR ESTA OFERTA!
+            ¡QUIERO APROVECHAR ESTA OFERTA!
           </Button>
           
           <div className="space-y-2">
             <p className="text-sm text-muted-foreground">
-              ✅ Acesso imediato após o pagamento
+              ✅ Acceso inmediato después del pago
             </p>
             <p className="text-sm text-muted-foreground">
-              ✅ Pagamento 100% seguro
+              ✅ Pago 100% seguro
             </p>
             <p className="text-sm text-muted-foreground">
-              ✅ Garantia incondicional de 7 dias
+              ✅ Garantía incondicional de 7 días
             </p>
           </div>
 
           <div className="bg-gradient-to-r from-primary/10 to-offer/10 p-6 rounded-lg border border-primary/20">
             <p className="text-lg font-semibold text-center text-foreground">
-              ⚠️ <span className="text-urgent">ATENÇÃO:</span> Esta oferta especial é válida apenas para esta sessão. 
-              Se você sair desta página, não conseguirá acessar este desconto novamente!
+              ⚠️ <span className="text-urgent">ATENCIÓN:</span> Esta oferta especial es válida solo para esta sesión. 
+              ¡Si sales de esta página, no podrás acceder a este descuento nuevamente!
             </p>
           </div>
         </div>
